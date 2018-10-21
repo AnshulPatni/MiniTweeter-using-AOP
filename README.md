@@ -4,7 +4,7 @@ ___
 
 In this project, we implement the retry and stats concerns to a tweeting service through Aspect Oriented Programming (AOP). 
 
-The tweet service is defined as follows:
+### The tweet service is defined as follows:
     
     import java.io.IOException;
     
@@ -31,7 +31,7 @@ The tweet service is defined as follows:
 
 Since network failure happens relatively frequently, we would add the feature to automatically retry for up to three times for a network failure (indicated by an IOException). (Please note the three retries are in addition to the original failed invocation.)
 
-We also implement the following TweetStats service:
+### We also implement the following TweetStats service:
 
     public interface TweetStats {
 
@@ -85,7 +85,8 @@ We also implement the following TweetStats service:
         String getMostBlockedFollower();
     }
     
-Example Stats
+### Example Stats
+
 The following examples are assuming stats are reset() before running every single example..
 
           1. Tweet message as tweet(“foo”,”barbar”). Then getLengthOfLongestTweet() returns 6.
